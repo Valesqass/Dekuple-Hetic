@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information Appareil</title>
+    <link rel="stylesheet" href="../assets/css/info_appareil.css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+        integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.0/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img class="post" src="/assets/img/header.png" alt="">
+        <img src="/assets/img/useer.png" alt="">
+    </header>
+
+    <main>
+        <aside>
+            <div class="icones">
+                <i  style="color: rgb(33, 33, 33);" class="fa-solid fa-bars"></i>
+                <a href="../steps/connect_appareil.html"><i  style="color: rgb(33, 33, 33);" class="fa-solid fa-globe" ></i></a>
+                <a href="../steps/performance.html" style="padding: 1.5rem 0;"><i  style="color: rgb(33, 33, 33);" class="ri-bar-chart-fill"></i></a>
+                <a href="info_appareil.html" style="padding: 1.5rem 0;"><i  style="color: rgb(33, 33, 33);" class="ri-git-pull-request-line"></i></a>
+                <a href="https://progres.azureiotcentral.com/devices"><i style="color: black; font-weight: 900;" class="fa-solid fa-gear"></i></a>
+            </div>
+        </aside>
+
+        <section class="pics">
+            <!-- <model-viewer src="../assets/appareil/apple_iphone_13_pro_max.glb" camera-controls autoplay></model-viewer> -->
+            <img src="../assets/img/Appareil-removebg-preview.png" alt="">
+            
+
+        </section>
+
+
+        <div class="formulaire">
+            <div class="Apple">
+                <h3>Fabricant</h3>
+                <input type="text" id="input1" placeholder="Apple" readonly> 
+                <span class="cercle rouge" onclick="redirection()"></span>
+            </div>
+            <div class="iphone">
+                <h3>Modèle de l'appareil</h3>
+                <input type="text" id="input2" placeholder="Iphone" readonly>
+                <span class="cercle vert" onclick="redirection()"></span>
+            </div>
+            <div class="ios">
+                <h3>Système d'exploitation</h3>
+                <input type="text" id="input3" placeholder="IOS" readonly>
+                <span class="cercle jaune" onclick="redirection()"></span>
+            </div>
+            <div class="17">
+                <h3>Version du logiciel</h3>
+                <input type="text" id="input4" placeholder="17.4.1" readonly>
+                <span class="cercle vert" onclick="redirection()"></span>
+            </div>
+            <div class="chiffres">
+                <h3>Stockage total</h3>
+                <input type="text" id="input5" placeholder="1239856" readonly>
+                <span class="cercle orange" onclick="redirection()"></span>
+            </div>
+
+            <button id="bouton" onclick="performances()">Plus d'infos</button>
+        </div>
+
+    </main>
+
+
+
+
+
+</body>
+<script src="../assets/js/infos.js"></script>
+</html>
